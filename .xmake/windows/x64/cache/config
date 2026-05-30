@@ -1,9 +1,0 @@
-{
-    options = {
-        plat = "mingw"
-    },
-    recheck = false,
-    mtimes = {
-        ["xmake.lua"] = 1780155140
-    }
-}
