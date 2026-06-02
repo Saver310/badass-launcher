@@ -92,7 +92,7 @@ def start_game():
         download_status_label['text'] = "fdb*e is not installed"
 def set_sourceport():
     sourceport = filedialog.askopenfilename()
-    sourceport['text'] = sourceport
+    sourceport_label['text'] = sourceport
     config.set('badass', 'sourceport', sourceport)
     with open('config.ini', 'w') as f:
         config.write(f)
