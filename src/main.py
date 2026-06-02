@@ -61,6 +61,8 @@ def is_git_repo(path):
     except git.exc.InvalidGitRepositoryError:
         return False
 def download():
+    if not os.path.exists(directory):
+          os.makedirs(directory)
     if not is_git_repo(directory):
         download_status_label['text'] = "downloading..."
         root.update()
