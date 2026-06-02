@@ -11,7 +11,7 @@ repo_url = "https://github.com/freedoom-badass-edition/freedoom-badass-edition.g
 
 if os.environ.get('DISPLAY','') == '':
     print('no display found. Using :0.0')
-    os.environ.__setitem__('DISPLAY', ':0.0')
+    os.environ.setitem('DISPLAY', ':0.0')
 
 root = tk.Tk()
 root.title('bad*ss launcher')
